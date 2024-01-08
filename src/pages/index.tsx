@@ -25,8 +25,8 @@ export default function Home() {
           href="https://poc-cf-image.cjenm.com/crop/152x152/public/share/systemmng/site/sitemng/캐치온Pavicon5355.png"
         />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
+      <header>
+        <div className={styles.header}>
           <Image
             src="https://poc-cf-image.cjenm.com/resize/280x64/public/share/systemmng/site/gnbmng/catchonLogolmg.png"
             alt="CatchOn Logo"
@@ -35,25 +35,30 @@ export default function Home() {
             height={64}
             priority
           />
-          <div>
+          <ul>
             <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://catchon.cjenm.com/ko/about-catchon/"
+              target="_self"
+              rel=""
             >
-              By{" "}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
+              <span>About CatchOn</span>
             </a>
-          </div>
+            <a href="https://catchon.cjenm.com/ko/monthly-catchon/">
+              <span>월의 캐치온</span>
+            </a>
+            <a href="https://catchon.cjenm.com/ko/catchon1-schedule/">
+              <span>편성표</span>
+            </a>
+            <a href="https://catchon.cjenm.com/ko/videos">
+              <span>동영상</span>
+            </a>
+            <a href="https://catchon.cjenm.com/ko/announcement/">
+              <span>공지사항</span>
+            </a>
+          </ul>
         </div>
-
+      </header>
+      <main className={styles.main}>
         <div className={styles.center}>
           <Image
             className={styles.banner}
@@ -138,7 +143,7 @@ export default function Home() {
           <Image
             src="https://poc-cf-image.cjenm.com/resize/280x64/public/share/systemmng/site/gnbmng/catchonLogolmg.png"
             alt="CatchOn Logo"
-            className={styles.catchonLogo}
+            className={styles.footerlogo}
             width={280}
             height={64}
             priority
