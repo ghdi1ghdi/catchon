@@ -1,7 +1,9 @@
 .header {
+  background-color: #17011eff;
   position: fixed;
   top: 0;
-  padding: 3rem;
+  padding: 1rem;
+  height: 130px;
   width: 100%;
   z-index: 999;
   -webkit-transition: top 0.1s ease-out;
@@ -9,7 +11,6 @@
   -ms-transition: top 0.1s ease-out;
   -o-transition: top 0.1s ease-out;
   transition: top 0.1s ease-out;
-  right: 0; /* Add this line to move the header to the right */
 }
 
 .header a {
@@ -26,7 +27,31 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.02em;
+}
+
+.header ul {
+  position: relative;
+  display: flex;
   justify-content: right;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0rem;
+}
+
+.buttomnav {
+  display: flex;
+}
+
+.buttomnav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0rem;
 }
 
 .main {
@@ -34,7 +59,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 4rem;
   min-height: 100vh;
 }
 .description {
@@ -146,6 +171,7 @@
   font-weight: inherit;
   line-height: inherit;
   font-style: normal;
+  margin-top: 1.5rem;
 }
 
 .thirteen {
